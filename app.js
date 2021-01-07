@@ -39,6 +39,9 @@ class App {
 
         this.ctx.clearRect(0, 0, this.stageWidth, this.stageHeight);
 
+        this.ctx.fillStyle = '#777';
+        this.ctx.fillText("wwoong22", this.stageWidth - 70, this.stageHeight - 20);
+
         let outPaperCount = 0;
         for (let i = 0; i < this.papers.length; i++) {
             const outOfCanvas = this.papers[i].draw(this.ctx);
